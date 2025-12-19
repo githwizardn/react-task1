@@ -8,7 +8,7 @@ export default function Home() {
   //   Create an array for social networks
   const socialNetworks = [
     { name: "Facebook", url: "https://www.facebook.com/gm663274/" },
-    { name: "Linkedin", url: "www.linkedin.com/in/nodo-m-3308041b1" },
+    { name: "Linkedin", url: "https://www.linkedin.com/in/nodo-m-3308041b1" },
     { name: "GitHub", url: "https://github.com/githwizardn/" },
     { name: "Email", url: "mailto:mrr.nodo@gmail.com" },];
 
