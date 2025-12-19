@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+React Task 1: Component Props & Mapping
+This is a Next.js project focused on mastering data flow between components using React props and the .map() function.
 
-## Getting Started
+🚀 Project Overview
+This project demonstrates how to pass arrays of data from a parent component (page.js) down to child components (Navbar and Footer). It features an extravagant glassmorphism design and is fully responsive for mobile devices.
 
-First, run the development server:
+Key Features
+Dynamic Navigation: A navList array is passed to the Navbar and rendered dynamically.
 
-```bash
+Social Media Objects: A socialNetworks array containing objects (names and URLs) is passed to the Footer.
+
+CSS Modules: Professional styling using scoped .module.css files to prevent class name conflicts.
+
+Responsive Design: Mobile-first approach using CSS Media Queries to stack links on smaller screens.
+
+Custom Brand: Updated metadata and a custom alien favicon icon.
+
+🛠️ Getting Started
+First, install the dependencies:
+
+Bash
+
+npm install
+Then, run the development server:
+
+Bash
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Open http://localhost:3000 with your browser to see the result.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📁 Project Structure
+src/app/page.js: The main entry point where data arrays are defined.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+src/components/navbar/: Contains the Navbar logic and styles.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+src/components/footer/: Contains the Footer logic and "extravagant" styles.
 
-## Learn More
+src/app/layout.js: The root layout handling fonts and global metadata.
 
-To learn more about Next.js, take a look at the following resources:
+🎓 Concepts Learned
+Props: Passing data between components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Array Mapping: Using {list.map()} to generate JSX elements.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Next.js Optimization: Leveraging next/font for performance.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Git Hygiene: Using .gitignore to keep the repository clean.
+ 

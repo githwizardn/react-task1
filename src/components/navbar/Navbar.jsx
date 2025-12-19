@@ -1,23 +1,20 @@
-'use client'
-import styles from "./Navbar.module.css";
+import styles from './Navbar.module.css';
 
-const Navbar = ({ title, navList }) => {
-  const handleClick = (item) => {
-    console.log("Clicked ", item);
-  };
-
+//  Navbar must receive 'list' array as a prop
+const Navbar = ({ list }) => {
   return (
-    <>
-      <div className={styles.navbar}>{title}</div>
-      <div>
-        {navList.map((item) => (
-          <div key={item}>
-            <button onClick={() => handleClick(item)}>{item}</button>
-          </div>
+    <nav className={styles.navbar}>
+      <ul>
+        {/*  Map the list and provide a unique key */}
+        {list.map((item, index) => (
+          <li key={index}>{item}</li>
         ))}
-      </div>
-    </>
+      </ul>
+    </nav>
   );
 };
+
+
+
 
 export default Navbar;

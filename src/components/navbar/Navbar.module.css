@@ -1,5 +1,60 @@
 .navbar {
-  height: 5vh;
-  background-color: black;
-  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 1.5rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navbar li:hover {
+  color: #00d2ff;
+  text-shadow: 0 0 10px #00d2ff, 0 0 20px #00d2ff;
+  transform: translateY(-3px);
+}
+
+/* Animated underline effect */
+.navbar li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #00d2ff;
+  transition: width 0.3s ease;
+}
+
+.navbar li:hover::after {
+  width: 100%;
+}
+@media (max-width: 600px) {
+  .navbar ul {
+    gap: 10px; /* Bring Home, About, etc. closer together */
+  }
+
+  .navbar li {
+    font-size: 0.8rem; /* Smaller font for small screens */
+  }
 }
