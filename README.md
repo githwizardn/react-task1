@@ -1,4 +1,4 @@
-React Task 1: Component Props & Mapping
+React Task : Component Props & Mapping
 This is a Next.js project focused on mastering data flow between components using React props and the .map() function.
 
 🚀 Project Overview

@@ -19,7 +19,7 @@
 }
 
 .navbar li {
-  color: #fff;
+  color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -58,3 +58,21 @@
     font-size: 0.8rem; /* Smaller font for small screens */
   }
 }
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logoImage {
+  filter: drop-shadow(0 0 5px cyan);  
+  transition: transform 0.3s ease;
+}
+
+.logoImage:hover {
+  transform: rotate(20deg) scale(1.1);  
+}
+
+ 
