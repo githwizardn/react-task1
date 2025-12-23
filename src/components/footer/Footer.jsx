@@ -1,9 +1,9 @@
 import styles from './Footer.module.css';
 
-const Footer = ({ list }) => {
+const Footer = ({ list, id }) => {
   return (
-    <footer className={styles.footer}>
-      <h4>Social Media</h4>
+    <footer id={id} className={styles.footer}>
+      <h4>Contact Me </h4>
       <ul className={styles.list}>
         {list.map((social, index) => (
           <li key={index} className={styles.item}>

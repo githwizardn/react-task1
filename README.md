@@ -1,48 +1,30 @@
-React Task 1: Component Props & Mapping
-This is a Next.js project focused on mastering data flow between components using React props and the .map() function.
+# EVOLVING REACT: THE DYNAMIC STORE
 
-🚀 Project Overview
-This project demonstrates how to pass arrays of data from a parent component (page.js) down to child components (Navbar and Footer). It features an extravagant glassmorphism design and is fully responsive for mobile devices.
+This is a Next.js project that has evolved from basic component mapping to a fully interactive, state-managed product dashboard. 
 
-Key Features
-Dynamic Navigation: A navList array is passed to the Navbar and rendered dynamically.
+🚀 Project Evolution (Task 1 to Task 2)
+The project demonstrates the transition from static data flow to dynamic API integration and complex state logic using React hooks.
 
-Social Media Objects: A socialNetworks array containing objects (names and URLs) is passed to the Footer.
+✨ New Features (Task 2)
+- **API Integration:** Dynamically fetches 20 products from the FakeStoreAPI using `useEffect`.
+- **State-Managed Trash Bin:** Logic to "Delete" products from the main view and move them to a dedicated deleted section.
+- **Restore Functionality:** Users can undo deletions, moving items back from the Trash Bin to the active Product Grid.
+- **Conditional Rendering:** The "Deleted Items" section only appears when there is at least one item in the trash.
+- **Anchored Navigation:** Navbar links are now object-based, allowing smooth scrolling to specific sections (`#store`, `#contact`).
+- **Modular Architecture:** The product logic is encapsulated in its own `ProductList` component for better scalability.
 
-CSS Modules: Professional styling using scoped .module.css files to prevent class name conflicts.
+🛠️ Technical Stack
+- **Next.js:** App Router architecture.
+- **React Hooks:** `useState` for data management and `useEffect` for the Fetch API.
+- **CSS Modules:** Scoped styling with CSS Grid for a responsive product layout.
+- **Next/Image:** Optimized remote image rendering from external domains.
 
-Responsive Design: Mobile-first approach using CSS Media Queries to stack links on smaller screens.
+🚀 Getting Started
+- **Clone and Install:**
+   
+   npm install
+   Then 
+   npm run dev
 
-Custom Brand: Updated metadata and a custom alien favicon icon.
-
-🛠️ Getting Started
-First, install the dependencies:
-
-Bash
-
-npm install
-Then, run the development server:
-
-Bash
-
-npm run dev
-Open http://localhost:3000 with your browser to see the result.
-
-📁 Project Structure
-src/app/page.js: The main entry point where data arrays are defined.
-
-src/components/navbar/: Contains the Navbar logic and styles.
-
-src/components/footer/: Contains the Footer logic and "extravagant" styles.
-
-src/app/layout.js: The root layout handling fonts and global metadata.
-
-🎓 Concepts Learned
-Props: Passing data between components.
-
-Array Mapping: Using {list.map()} to generate JSX elements.
-
-Next.js Optimization: Leveraging next/font for performance.
-
-Git Hygiene: Using .gitignore to keep the repository clean.
- 
+   Open http://localhost:3000 with your browser to see the result.
+   

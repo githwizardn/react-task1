@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "React Task 1", 
-  description: "My extravagant React project",
+  title: "React Task", 
+  description: "My React project",
 };
 
 export default function RootLayout({ children }) {

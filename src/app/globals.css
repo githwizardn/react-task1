@@ -36,3 +36,7 @@ a {
   background: #00d2ff;
   color: #000;
 }
+
+html {
+  scroll-behavior: smooth;
+}
